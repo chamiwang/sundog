@@ -1,0 +1,11 @@
+<?php
+
+// src/Product.php
+class Product
+{
+    /**
+     * @var int
+     */
+    protected $id;
+
+}

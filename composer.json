@@ -1,0 +1,17 @@
+{
+  "require": {
+    "doctrine/orm": "v2.5.5",
+    "noahbuscher/macaw": "dev-master",
+    "symfony/yaml": "^3.2",
+    "twig/twig": "~1.0"
+  },
+  "autoload": {
+    "psr-0": {"": "src/"},
+    "classmap": [
+      "app/controllers",
+      "app/logics",
+      "core",
+      "src"
+    ]
+  }
+}
