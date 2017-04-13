@@ -5,7 +5,7 @@
  * Date: 2017/3/17
  * Time: 17:03
  */
-namespace core;
+namespace Core;
 
 class BaseLogic
 {

@@ -6,7 +6,11 @@
  * Time: 18:02
  */
 
-class TestController extends \core\BaseController
+namespace App\Controller;
+
+use Core\BaseController;
+
+class TestController extends BaseController
 {
     public function test()
     {

@@ -26,12 +26,25 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
         array (
             'NoahBuscher\\Macaw\\' => 18,
         ),
+        'L' => 
+        array (
+            'Logic\\' => 6,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
+        ),
+        'C' => 
+        array (
+            'Core\\' => 5,
+            'Controller\\' => 11,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
@@ -60,6 +73,10 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
         array (
             0 => __DIR__ . '/..' . '/noahbuscher/macaw',
         ),
+        'Logic\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/logic',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -75,6 +92,18 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
         'Doctrine\\Common\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
+        ),
+        'Core\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/core',
+        ),
+        'Controller\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/controllers',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
@@ -116,13 +145,19 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
     );
 
     public static $classMap = array (
+        'App\\Controller\\MainController' => __DIR__ . '/../..' . '/app/controllers/MainController.php',
+        'App\\Controller\\TestController' => __DIR__ . '/../..' . '/app/controllers/TestController.php',
+        'App\\Logic\\TestLogic' => __DIR__ . '/../..' . '/app/logic/TestLogic.php',
+        'Article' => __DIR__ . '/../..' . '/src/Article.php',
+        'Base' => __DIR__ . '/../..' . '/src/Base.php',
+        'Core\\BaseController' => __DIR__ . '/../..' . '/core/BaseController.php',
+        'Core\\BaseLogic' => __DIR__ . '/../..' . '/core/BaseLogic.php',
+        'Core\\Doctrine' => __DIR__ . '/../..' . '/core/Doctrine.php',
+        'Core\\Twig' => __DIR__ . '/../..' . '/core/Twig.php',
         'Product' => __DIR__ . '/../..' . '/src/Product.php',
-        'TestController' => __DIR__ . '/../..' . '/app/controllers/TestController.php',
-        'core\\BaseController' => __DIR__ . '/../..' . '/core/BaseController.php',
-        'core\\BaseLogic' => __DIR__ . '/../..' . '/core/BaseLogic.php',
-        'core\\Doctrine' => __DIR__ . '/../..' . '/core/Doctrine.php',
-        'core\\Twig' => __DIR__ . '/../..' . '/core/Twig.php',
-        'logics\\TestLogic' => __DIR__ . '/../..' . '/app/logics/TestLogic.php',
+        'Profile' => __DIR__ . '/../..' . '/src/Profile.php',
+        'Torrent' => __DIR__ . '/../..' . '/src/Torrent.php',
+        'User' => __DIR__ . '/../..' . '/src/User.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

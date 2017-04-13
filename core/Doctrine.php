@@ -6,7 +6,7 @@
  * Time: 10:23
  */
 
-namespace core;
+namespace Core;
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 

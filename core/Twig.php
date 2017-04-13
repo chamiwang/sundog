@@ -6,7 +6,7 @@
  * Time: 11:31
  */
 
-namespace core;
+namespace Core;
 
 class Twig
 {
@@ -21,7 +21,7 @@ class Twig
             self::$instance['loader'] = $loader;
             self::$instance['twig'] = new \Twig_Environment($loader, $config['twig']);
             $escaper = new \Twig_Extension_Escaper('html');
-            self::$instance['twig'] ->addExtension($escaper);
+            self::$instance['twig']->addExtension($escaper);
         }
         return self::$instance;
     }

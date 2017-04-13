@@ -9,9 +9,15 @@
     "psr-0": {"": "src/"},
     "classmap": [
       "app/controllers",
-      "app/logics",
+      "app/logic",
       "core",
       "src"
-    ]
+    ],
+    "psr-4": {
+      "App\\": "app/",
+      "Controller\\": "controllers/",
+      "Logic\\": "logic/",
+      "Core\\": "core/"
+    }
   }
 }

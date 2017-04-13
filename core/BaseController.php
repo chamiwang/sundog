@@ -5,14 +5,14 @@
  * Date: 2017/3/17
  * Time: 17:04
  */
-namespace core;
+namespace Core;
 
 class BaseController
 {
     protected function logic($name)
     {
         $name = ucfirst($name);
-        $class =  "\\logics\\".$name."Logic";
+        $class =  "App\\Logic\\".$name."Logic";
         return new $class();
     }
 
@@ -36,5 +36,11 @@ class BaseController
         } else {
             $twig['twig']->display($view.'.html', $data);
         }
+    }
+
+    protected function response($data, $type = 'json')
+    {
+        header('Content-Type:application/json; charset=utf-8');
+        exit(json_encode($data));
     }
 }
