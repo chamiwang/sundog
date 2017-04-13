@@ -1,0 +1,17 @@
+Base:
+  type: mappedSuperclass
+  fields:
+    created_at:
+      type: datetime
+      nullable: false
+    created_at:
+      type: datetime
+      nullable: false
+    updated_at:
+      type: datetime
+      nullable: false
+    deleted:
+      type: boolean
+      nullable: false
+      options:
+        default: false

@@ -1,0 +1,24 @@
+Profile:
+  type: entity
+  table: profiles
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    sex:
+      type: smallint
+    moto:
+      type: string
+    birthday:
+      type: datetime
+    read_count:
+      type: integer
+  oneToOne:
+    user:
+      targetEntity: User
+      joinColumn:
+        name: user_id
+        referencedColumnName: id
+        onDelete: CASCADE

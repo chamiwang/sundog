@@ -1,0 +1,21 @@
+User:
+  type: entity
+  table: users
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    name:
+      type: string
+    user_name:
+      type: string
+    password:
+      type: string
+    email:
+      type: string
+    avatar:
+      type: string
+    main_role:
+      type: string
