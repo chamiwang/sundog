@@ -9,7 +9,7 @@
         "email": "darkchameleonwy@yahoo.com",
         "homepage": "http://www.icanfan.com",
         "role": "Developer"
-    },
+    }
   ],
   "require": {
     "doctrine/orm": "v2.5.5",
