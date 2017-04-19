@@ -15,6 +15,7 @@
       {"type": "composer", "url": "https://repo.packagist.com/uss/"},
       {"packagist.org": false}
   ],
+  "version":"1.0.0",
   "require": {
     "doctrine/orm": "v2.5.5",
     "noahbuscher/macaw": "dev-master",
