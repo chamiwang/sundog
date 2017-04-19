@@ -12,8 +12,10 @@
     }
   ],
   "repositories": [
-      {"type": "composer", "url": "https://repo.packagist.com/uss/"},
-      {"packagist.org": false}
+      {
+        "type": "vcs",
+        "url": "https://github.com/chamiwang/sundog"
+      }
   ],
   "version":"1.0.0",
   "require": {
