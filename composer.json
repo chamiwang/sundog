@@ -1,8 +1,8 @@
 {
   "name":"unstablesouls/sundog",
   "description":"a php framework to build web project easily",
-  "type":"project",
   "license":"MIT",
+  "type": "project",
   "authors": [
     {
         "name": "chamiwang",
@@ -19,6 +19,7 @@
   ],
   "require": {
     "doctrine/orm": "v2.5.5",
+    "noahbuscher/macaw": "dev-master",
     "symfony/yaml": "^3.2",
     "twig/twig": "~1.0"
   },
