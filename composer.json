@@ -1,4 +1,22 @@
 {
+  "name":"unstablesouls/sundog",
+  "description":"a php framework to build web project easily",
+  "type":"project",
+  "license":"MIT",
+  "authors": [
+    {
+        "name": "chamiwang",
+        "email": "darkchameleonwy@yahoo.com",
+        "homepage": "http://www.icanfan.com",
+        "role": "Developer"
+    }
+  ],
+  "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/chamiwang/sundog"
+      }
+  ],
   "require": {
     "doctrine/orm": "v2.5.5",
     "noahbuscher/macaw": "dev-master",
