@@ -18,6 +18,7 @@ use Symfony\Component\Yaml\Parser;
 
 class ParserTest extends TestCase
 {
+    /** @var Parser */
     protected $parser;
 
     protected function setUp()
@@ -1477,6 +1478,38 @@ bar: baz
 EOT;
 
         $this->assertSame(array('foo' => 'bar baz foobar foo', 'bar' => 'baz'), $this->parser->parse($yaml));
+    }
+
+    public function testCanParseVeryLongValue()
+    {
+        $longStringWithSpaces = str_repeat('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ', 20000);
+        $trickyVal = array('x' => $longStringWithSpaces);
+
+        $yamlString = Yaml::dump($trickyVal);
+        $arrayFromYaml = $this->parser->parse($yamlString);
+
+        $this->assertEquals($trickyVal, $arrayFromYaml);
+    }
+
+    /**
+     * @expectedException \Symfony\Component\Yaml\Exception\ParseException
+     * @expectedExceptionMessage Reference "foo" does not exist at line 2
+     */
+    public function testParserCleansUpReferencesBetweenRuns()
+    {
+        $yaml = <<<YAML
+foo: &foo
+    baz: foobar
+bar:
+    <<: *foo
+YAML;
+        $this->parser->parse($yaml);
+
+        $yaml = <<<YAML
+bar:
+    <<: *foo
+YAML;
+        $this->parser->parse($yaml);
     }
 }
 

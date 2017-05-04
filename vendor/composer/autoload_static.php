@@ -26,6 +26,10 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
         array (
             'NoahBuscher\\Macaw\\' => 18,
         ),
+        'M' => 
+        array (
+            'Model\\' => 6,
+        ),
         'L' => 
         array (
             'Logic\\' => 6,
@@ -40,10 +44,11 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
         'C' => 
         array (
             'Core\\' => 5,
-            'Controller\\' => 11,
         ),
         'A' => 
         array (
+            'App\\Model\\' => 10,
+            'App\\Controller\\' => 15,
             'App\\' => 4,
         ),
     );
@@ -73,6 +78,10 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
         array (
             0 => __DIR__ . '/..' . '/noahbuscher/macaw',
         ),
+        'Model\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/models',
+        ),
         'Logic\\' => 
         array (
             0 => __DIR__ . '/../..' . '/logic',
@@ -97,9 +106,13 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
         array (
             0 => __DIR__ . '/../..' . '/core',
         ),
-        'Controller\\' => 
+        'App\\Model\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/controllers',
+            0 => __DIR__ . '/../..' . '/src/App/Model',
+        ),
+        'App\\Controller\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/controllers',
         ),
         'App\\' => 
         array (
@@ -140,34 +153,12 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
         ),
     );
 
-    public static $fallbackDirsPsr0 = array (
-        0 => __DIR__ . '/../..' . '/src',
-    );
-
-    public static $classMap = array (
-        'App\\Controller\\MainController' => __DIR__ . '/../..' . '/app/controllers/MainController.php',
-        'App\\Controller\\TestController' => __DIR__ . '/../..' . '/app/controllers/TestController.php',
-        'App\\Logic\\TestLogic' => __DIR__ . '/../..' . '/app/logic/TestLogic.php',
-        'Article' => __DIR__ . '/../..' . '/src/Article.php',
-        'Base' => __DIR__ . '/../..' . '/src/Base.php',
-        'Core\\BaseController' => __DIR__ . '/../..' . '/core/BaseController.php',
-        'Core\\BaseLogic' => __DIR__ . '/../..' . '/core/BaseLogic.php',
-        'Core\\Doctrine' => __DIR__ . '/../..' . '/core/Doctrine.php',
-        'Core\\Twig' => __DIR__ . '/../..' . '/core/Twig.php',
-        'Product' => __DIR__ . '/../..' . '/src/Product.php',
-        'Profile' => __DIR__ . '/../..' . '/src/Profile.php',
-        'Torrent' => __DIR__ . '/../..' . '/src/Torrent.php',
-        'User' => __DIR__ . '/../..' . '/src/User.php',
-    );
-
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4::$classMap;
 
         }, null, ClassLoader::class);
     }

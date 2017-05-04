@@ -1,4 +1,4 @@
-Base:
+App\Model\Base:
   type: mappedSuperclass
   fields:
     created_at:

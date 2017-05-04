@@ -6,17 +6,4 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\Controller\\MainController' => $baseDir . '/app/controllers/MainController.php',
-    'App\\Controller\\TestController' => $baseDir . '/app/controllers/TestController.php',
-    'App\\Logic\\TestLogic' => $baseDir . '/app/logic/TestLogic.php',
-    'Article' => $baseDir . '/src/Article.php',
-    'Base' => $baseDir . '/src/Base.php',
-    'Core\\BaseController' => $baseDir . '/core/BaseController.php',
-    'Core\\BaseLogic' => $baseDir . '/core/BaseLogic.php',
-    'Core\\Doctrine' => $baseDir . '/core/Doctrine.php',
-    'Core\\Twig' => $baseDir . '/core/Twig.php',
-    'Product' => $baseDir . '/src/Product.php',
-    'Profile' => $baseDir . '/src/Profile.php',
-    'Torrent' => $baseDir . '/src/Torrent.php',
-    'User' => $baseDir . '/src/User.php',
 );

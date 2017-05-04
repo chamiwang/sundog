@@ -1,4 +1,4 @@
-Product:
+App\Model\Product:
   type: entity
   table: products
   id:

@@ -1,4 +1,4 @@
-Profile:
+App\Model\Profile:
   type: entity
   table: profiles
   id:

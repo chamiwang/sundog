@@ -36,7 +36,7 @@ class BaseLogic
 
     public function create(array $data)
     {
-        $class = ucfirst($this->getModelName());
+        $class = "App\\Model\\".ucfirst($this->getModelName());
         $object = new $class();
         $object = $this->preCreate($object);
         foreach($data as $key=>$value) {
