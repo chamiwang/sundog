@@ -5,7 +5,7 @@ use Doctrine\ORM\EntityManager;
 require_once "bootstrap.php";
 
 // the connection configuration
-$config = include_once(APP_ROOT.'/app/config/config.php');
+$config = include(APP_ROOT.'/app/config/config.php');
 $dbParams = $config['database'];
 
 // Create a simple "default" Doctrine ORM configuration for Annotations

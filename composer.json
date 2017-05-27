@@ -13,9 +13,10 @@
   ],
   "require": {
     "doctrine/orm": "v2.5.5",
-    "noahbuscher/macaw": "dev-master",
     "symfony/yaml": "^3.2",
-    "twig/twig": "~1.0"
+    "twig/twig": "~1.0",
+    "nikic/fast-route": "^1.2",
+    "symfony/http-foundation": "2.8.*|3.0.*"
   },
   "autoload": {
 
@@ -23,7 +24,7 @@
       "App\\": "app/",
       "App\\Controller\\": "app/controllers/",
       "App\\Model\\":"src/App/Model/",
-      "Logic\\": "logic/",
+      "App\\Logic\\": "app/logic/",
       "Core\\": "core/",
       "Model\\":"models/"
     }

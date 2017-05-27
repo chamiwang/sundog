@@ -31,6 +31,9 @@ class BaseLogic
 
     protected function preCreate($object)
     {
+        $object->setCreatedAt(new \DateTime());
+        $object->setUpdatedAt(new \DateTime());
+        $object->setDeleted(0);
         return $object;
     }
 

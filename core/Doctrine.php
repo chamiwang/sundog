@@ -21,7 +21,7 @@ class Doctrine
     public static function getEntityManager()
     {
         // the connection configuration
-        $config = include_once(APP_ROOT.'/app/config/config.php');
+        $config = include(APP_ROOT.'/app/config/config.php');
         $dbParams = $config['database'];
 
         // Create a simple "default" Doctrine ORM configuration for Annotations

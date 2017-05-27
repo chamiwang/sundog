@@ -7,6 +7,10 @@ return [
       'user'     => 'root',
       'password' => 'root',
       'dbname'   => 'test',
+      'charset'  => 'utf8',
+      'driverOptions' => array(
+          1002 => 'SET NAMES utf8'
+      )
   ],
   'twig'=>
   [

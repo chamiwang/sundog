@@ -14,7 +14,7 @@ class Twig
     public static function getInstance()
     {
         // the connection configuration
-        $config = include_once(APP_ROOT.'/app/config/config.php');
+        $config = include(APP_ROOT.'/app/config/config.php');
 
         if(! (self::$instance instanceof self) ) {
             $loader = new\Twig_Loader_Filesystem([APP_ROOT.'/app/views']);

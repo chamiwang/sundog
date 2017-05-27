@@ -8,6 +8,7 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -15,6 +16,7 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Yaml\\' => 23,
+            'Symfony\\Component\\HttpFoundation\\' => 33,
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
         ),
@@ -22,17 +24,13 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
         array (
             'Psr\\Log\\' => 8,
         ),
-        'N' => 
-        array (
-            'NoahBuscher\\Macaw\\' => 18,
-        ),
         'M' => 
         array (
             'Model\\' => 6,
         ),
-        'L' => 
+        'F' => 
         array (
-            'Logic\\' => 6,
+            'FastRoute\\' => 10,
         ),
         'D' => 
         array (
@@ -48,6 +46,7 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
         'A' => 
         array (
             'App\\Model\\' => 10,
+            'App\\Logic\\' => 10,
             'App\\Controller\\' => 15,
             'App\\' => 4,
         ),
@@ -62,6 +61,10 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
+        'Symfony\\Component\\HttpFoundation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/http-foundation',
+        ),
         'Symfony\\Component\\Debug\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/debug',
@@ -74,17 +77,13 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
-        'NoahBuscher\\Macaw\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/noahbuscher/macaw',
-        ),
         'Model\\' => 
         array (
             0 => __DIR__ . '/../..' . '/models',
         ),
-        'Logic\\' => 
+        'FastRoute\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/logic',
+            0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -109,6 +108,10 @@ class ComposerStaticInitad1cdb1cacf426c1af41ea637c640df4
         'App\\Model\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/App/Model',
+        ),
+        'App\\Logic\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/logic',
         ),
         'App\\Controller\\' => 
         array (
