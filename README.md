@@ -19,7 +19,7 @@ composer create-project unstablesouls/sundog --prefer-dist
 
 3.在public文件下增加.htaccess文件，内容如下
 
-
+```
 # Use the front controller as index file. It serves as a fallback solution when
 # every other rewrite/redirect fails (e.g. in an aliased environment without
 # mod_rewrite). Additionally, this reduces the matching process for the
@@ -98,7 +98,7 @@ DirectoryIndex app.php
         # RedirectTemp cannot be used instead
     </IfModule>
 </IfModule>
-
+```
             
 4.修改app/config/config.php
 
