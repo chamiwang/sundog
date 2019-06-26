@@ -99,6 +99,7 @@ DirectoryIndex app.php
     </IfModule>
 </IfModule>
 ```
+apache的话要把AllowOverride 设置为 ALL ，有apache.conf 和 虚拟机.conf两处要设置
             
 4.修改app/config/config.php
 
